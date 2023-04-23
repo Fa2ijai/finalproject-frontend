@@ -9,11 +9,14 @@
 </head>
 <body>
     <div id="navbar">
-        <div class="title"><span style="color: #FF872B;">To Do </span>List</div>
+        <div class="title">
+            <button id="hamburger"><img src="/img/🦆 icon _hamburger menu_.png" alt="hamburger" height="25px" width="30px"></button>
+            <span style="color: #FF872B;"> To Do </span>List</div>
         <button class="logout">Log Out</button>
     </div>
     
     <div class = "page">
+           
         <button class="addTask" onclick="showAddTask()">Add Task</button>
         <script>
             function showAddTask(){
@@ -25,6 +28,7 @@
                 }
             }
         </script>
+        
         <div id = "addTaskBox">
             <div class="title-and-date">
                 <input class = "inputText" type="text" id = "title" placeholder="Title" required></input>
@@ -70,13 +74,14 @@
             }
             }
         </script>
+        <div class="pagecover">  </div>
         <div class="categoryBox">
             <script>
                 for(let i=0;i<category.length;i++)
                     document.write(`<button id = "category">${category[i]}</button>`)
             </script>
             <button class="addCategory">+</button>
-        </div>        
+        </div>     
     </div>
 </body>
 </html>
